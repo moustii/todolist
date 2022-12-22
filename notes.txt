@@ -1,0 +1,3 @@
+- attribuer un statut pour les tâches : P(Progress), D(Done)
+- au clic du bouton en cours ou finies : retourner un nouveau tableau ne contenant que les tâches voulues
+- supprimer une tache
