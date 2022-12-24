@@ -1,0 +1,14 @@
+.taskButton {
+    display: block;
+    color: #fff;
+    background-color: rgb(17, 192, 174);
+    padding: 15px 30px;
+    border: 0px;
+    border-radius: 30px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.taskButton:hover {
+    transform: scale(1.1);
+}
