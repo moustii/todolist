@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './Tasks.css';
+import Task from '../Task/Task';
 
 class Tasks extends Component {
 
@@ -8,12 +9,10 @@ class Tasks extends Component {
             {id: 1, title: "Rdv dentiste", description: "Detartrage annuel à 15h"},
             {id: 2, title: "Controle technique", description: "Prendre rdv pour le CT"},
             {id: 3, title: "Boulangerie", description: "Acheter du pain et des croissants"},
+            {id: 4, title: "Dev", description: "Initiation aux hooks"},
         ],
     };
 
-    
-    
-    
     
     render() {
         console.log(this.state.tasks);
@@ -23,8 +22,10 @@ class Tasks extends Component {
                     this.state.tasks.map(task => {
                         return (
                             <div className='task'>
-                                <p>{task.title.toUpperCase()}</p>
-                                <p>{task.description}</p>
+                                <Task 
+                                    title={task.title.toUpperCase()} 
+                                    description={task.description}
+                                />
                             </div>
                         )
                     })
