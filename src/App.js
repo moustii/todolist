@@ -8,7 +8,6 @@ function App() {
     const [addform, setAddForm] = useState(false);
 
     const changeAddFormState = () => setAddForm(addform => !addform);
-    console.log(addform);
 
     return (
         <div className="app-container">
@@ -17,7 +16,7 @@ function App() {
                 Just Do It
             </MainTitle>
 
-            <Tasks/>
+            <Tasks form={addform} closeAddForm={() => setAddForm(addform => !addform)}/>
 
             <Button click={changeAddFormState}>
                 AJOUTER
