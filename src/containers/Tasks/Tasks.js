@@ -60,7 +60,7 @@ class Tasks extends Component {
                     {
                         !this.props.btnDisplay &&  
 
-                        this.state.tasks.reverse().map(task => {
+                        this.state.tasks.map(task => {
                             return (
                                 <div className='task' key={task.id}>
                                     <Task 
@@ -76,7 +76,7 @@ class Tasks extends Component {
 
                     {
                         this.props.btnDisplay &&  
-                        this.state.doneTasks.reverse().map(doneTask => {
+                        this.state.doneTasks.map(doneTask => {
                                 return (
                                     <div className='task' key={doneTask.id}>
                                         <Task 
