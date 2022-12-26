@@ -67,7 +67,6 @@ class Tasks extends Component {
                                         title={task.title.toUpperCase()} 
                                         description={task.description}
                                         delete={() => this.handleDeleteTask(task.id)}
-                                        done={true}
                                     />
                                 </div>
                             )
@@ -83,7 +82,6 @@ class Tasks extends Component {
                                             title={doneTask.title.toUpperCase()} 
                                             description={doneTask.description}
                                             delete={() => this.handleDeleteTask(doneTask.id)}
-                                            done={false}
                                         />
                                     </div>
                                 )

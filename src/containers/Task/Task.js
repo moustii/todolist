@@ -9,12 +9,15 @@ const Task = (props) => {
                 <br/>
                 {props.description}
             </p>
-            <Button 
-                typeBtn="btn-warning" 
-                click={props.delete} 
-            >
-                Supprimer
-            </Button>
+
+            {
+                props.done &&
+                <Button 
+                    click={props.delete} 
+                >
+                    OK
+                </Button>
+            }
         </>
     );
 }

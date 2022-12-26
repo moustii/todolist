@@ -7,9 +7,22 @@
     border-radius: 30px;
     margin: 0 auto;
     cursor: pointer;
+    width: 25%;
 }
 
 .taskButton:hover {
     background-color: rgb(21, 28, 131);
     transform: scale(1.1);
 }
+
+.btnRender {
+    display: inline-block;
+    margin-top: 20px;
+    color: #fff;
+    background-color: rgb(96, 212, 96);
+    border: 0;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
