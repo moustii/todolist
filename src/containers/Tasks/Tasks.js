@@ -13,18 +13,27 @@ class Tasks extends Component {
         ],
     };
 
+    handleDeleteTask = (id) => {
+        const taskIndex = this.state.tasks.findIndex(task => {
+            return task.id === id
+        });
+        const copyTasks = [...this.state.tasks];
+        copyTasks.splice(taskIndex, 1);
+        this.setState({tasks:copyTasks});
+    }
+
     
     render() {
-        console.log(this.state.tasks);
         return (
             <div className='tasks-list'>
                 {
                     this.state.tasks.map(task => {
                         return (
-                            <div className='task'>
+                            <div className='task' key={task.id}>
                                 <Task 
                                     title={task.title.toUpperCase()} 
                                     description={task.description}
+                                    delete={() => this.handleDeleteTask(task.id)}
                                 />
                             </div>
                         )

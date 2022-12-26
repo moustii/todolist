@@ -20,7 +20,7 @@ function App() {
             <Tasks/>
 
             <Button click={changeAddFormState}>
-                Tâche
+                AJOUTER
             </Button>
 
         </div>

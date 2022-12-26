@@ -1,7 +1,7 @@
 .taskButton {
     display: block;
     color: #fff;
-    background-color: rgb(17, 192, 174);
+    background-color: rgb(27, 213, 194);
     padding: 10px 20px;
     border: 0px;
     border-radius: 30px;
@@ -10,5 +10,6 @@
 }
 
 .taskButton:hover {
+    background-color: grey;
     transform: scale(1.1);
 }
