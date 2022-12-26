@@ -1,6 +1,6 @@
 .tasks-list {
     display: inline-block;
-    background-color: grey;
+    background-color: rgb(228, 200, 200);
     text-align: center;
     border-radius: 30px;
     width: 30%;
@@ -10,10 +10,11 @@
 .task {
     padding: 5px 0;
     margin: 0;
+    overflow-wrap: break-word;
 }
 
 .task:not(:last-child) {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
 }
 
 .task:hover {
@@ -26,4 +27,14 @@
 
 .tasks-list .task:last-child {
     border-radius: 0 0 30px 30px;
+}
+
+@media only screen and (max-width : 412px) {
+    .tasks-list {
+        display: block;
+        background-color: rgb(228, 200, 200);
+        text-align: center;
+        width: 100%;
+        margin: 30px 0;
+    }    
 }

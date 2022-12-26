@@ -19,7 +19,7 @@ function App() {
             <Tasks form={addform} closeAddForm={() => setAddForm(addform => !addform)}/>
 
             <Button click={changeAddFormState}>
-                AJOUTER
+                {!addform? 'AJOUTER' : 'FERMER'}
             </Button>
 
         </div>
